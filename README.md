@@ -1,43 +1,66 @@
-# Arjun Writing Style - Tinker Training Dataset
+# Arjun Writing Style - Tinker Training
 
-Training dataset for replicating Arjun Divecha's professional investment writing style using [Tinker](https://tinker.cool).
+Train an AI model to replicate Arjun Divecha's professional investment writing style using [Tinker](https://tinker.cool).
+
+## 🚀 Quick Start (2 Minutes)
+
+**→ See [SIMPLE_START.md](SIMPLE_START.md) for step-by-step instructions**
+
+**TL;DR:**
+1. Go to https://tinker.cool
+2. Upload `arjun_writing_tinker.jsonl`
+3. Start training with recommended config
+4. Wait 30-60 minutes
+5. Done!
 
 ## 📊 Dataset
 
 - **File**: `arjun_writing_tinker.jsonl`
+- **Examples**: 35 investment research essays (~270 KB)
+- **Content**: Emerging markets analysis with quantitative rigor
 - **Format**: JSONL (JSON Lines)
-- **Examples**: 35 investment research essays
-- **Size**: ~270 KB
-- **Content**: Emerging markets analysis, quantitative research, country selection strategies
 
-## 🚀 Quick Start
+## ✅ Training Status
 
-1. Go to [tinker.cool](https://tinker.cool) and create account
-2. Download `arjun_writing_tinker.jsonl` from this repo
-3. Upload to Tinker → **Datasets** → **Upload**
-4. Configure training:
-   - Model: `Llama-3.2-3B-Instruct`
-   - Epochs: 3-5
-   - Learning Rate: 2e-5
-   - Batch Size: 4-8
-5. Train and test with prompts like: "Analyze emerging market valuations"
+**Ready to train!** Everything is configured:
+- ✅ Dataset validated (31 train / 4 test)
+- ✅ Optimal hyperparameters set
+- ✅ API key configured
+- ✅ Instructions prepared
 
-## 📝 Style Characteristics
+## 📝 What You'll Get
 
-✅ Quantitative rigor (T-stats, regressions)  
-✅ Clear structure ("What We Did", "Conclusions")  
-✅ Data-driven analysis  
-✅ Academic yet accessible tone
+A model that writes like Arjun:
+- Quantitative rigor (T-stats, regressions, statistical analysis)
+- Clear structure ("What We Did", "Conclusions")
+- Data-driven investment insights
+- Academic yet accessible tone
 
-## 💡 Use with Claude Code
+## 📖 Documentation
 
-Tell Claude Code on the web to run this:
+- **[SIMPLE_START.md](SIMPLE_START.md)** - Quick training guide (start here!)
+- **[README_TRAINING.md](README_TRAINING.md)** - Detailed overview
+- **[TRAINING_INSTRUCTIONS.md](TRAINING_INSTRUCTIONS.md)** - Complete documentation
 
-\`\`\`bash
-claude code "Train my writing style model using arjun_writing_tinker.jsonl from the repo"
-\`\`\`
+## 🔧 Training Configuration
+
+```
+Model: meta-llama/Llama-3.2-3B-Instruct
+LoRA Rank: 32
+Learning Rate: 2e-5
+Batch Size: 4
+Epochs: 3
+Output: arjun-writing-style
+```
+
+## 💡 Example Prompts
+
+After training, try:
+- "Analyze emerging market valuations and country selection strategies"
+- "Discuss the relationship between GDP growth and market returns"
+- "Evaluate value investing effectiveness in emerging markets"
 
 ## 📖 Resources
 
-- [Tinker Docs](https://docs.tinker.cool)
-- [Example: Gertrude Stein Style](https://muratcankoylan.com/projects/gertrude-stein-style-training/)
+- [Tinker Platform](https://tinker.cool)
+- [Tinker Documentation](https://tinker-docs.thinkingmachines.ai)
